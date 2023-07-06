@@ -4,6 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import requests
 from captcha.image import ImageCaptcha
+from PIL import Image
+
 
 characters = string.digits + string.ascii_uppercase + string.ascii_lowercase
 print(characters)
@@ -75,12 +77,16 @@ def generate_captcha(path, count):
             f.write(response.content)
 
 
+def get_img_info(path):
+    img = Image.open(path)
+    print(img.width,img.height,img.format)
 # X, y = next(gen(1))
 # plt.imshow(X[0])
 # plt.title(decode(y))
 
 if __name__ == '__main__':
-    generate_captcha('/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/test_set/', 1000)
+    # generate_captcha('/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/test_set/', 1000)
+    get_img_info('/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/test_set/0.png')
     # gen1(49727)
     # import os
     # import re

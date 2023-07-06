@@ -11,12 +11,12 @@
 # Alphabet: the character in labels. Default string.digits + string.ascii_uppercase + string.ascii_lowercase
 System:
   GpuMemoryFraction: 0.7
-  TrainSetPath: 'trainset/path'
-  TestSetPath: 'testset/path'
-  LabelRegex: '_([0-9]{4}).jpg'
+  TrainSetPath: '/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/train_set'
+  TestSetPath: '/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/test_set'
+  LabelRegex: '([A-Za-z0-9]{5}).png'
   MaxTextLenth: 6
-  IMG_W: 52
-  IMG_H: 20
+  IMG_W: 200
+  IMG_H: 100
   ModelName: 'model_name.h5'
 #  Alphabet: '0123456789abcdefghijklmnopqrstuvwxyz'
   Alphabet: '0123456789'
