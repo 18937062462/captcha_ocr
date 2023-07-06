@@ -64,7 +64,7 @@ def generate_captcha(path, count):
     :param count: 生成数量
     :return:
     """
-    url = 'http://{host}/unifiedAuth/get/captcha/tianqisen'
+    url = 'http://{host}/unifiedAuth/get/captcha/zhangwuji'
     header = {
         "X-GW-TIMESTAMP": "1688624954598"
     }
