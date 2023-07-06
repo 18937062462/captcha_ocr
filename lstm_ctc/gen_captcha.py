@@ -64,7 +64,7 @@ def generate_captcha(path, count):
     :param count: 生成数量
     :return:
     """
-    url = 'http://crm.gouyashop.com/api/gycmphome/unifiedAuth/get/captcha/tianqisen'
+    url = 'http://{host}/unifiedAuth/get/captcha/tianqisen'
     header = {
         "X-GW-APPID": "1000004082",
         "X-GW-PLATFORM": "tms.gouyashop",
