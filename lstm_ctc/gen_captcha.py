@@ -66,9 +66,6 @@ def generate_captcha(path, count):
     """
     url = 'http://{host}/unifiedAuth/get/captcha/tianqisen'
     header = {
-        "X-GW-APPID": "1000004082",
-        "X-GW-PLATFORM": "tms.gouyashop",
-        "X-GW-TENANTID": "gouyashop",
         "X-GW-TIMESTAMP": "1688624954598"
     }
     for num in range(0, count):
