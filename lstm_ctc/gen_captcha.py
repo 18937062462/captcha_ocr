@@ -83,7 +83,7 @@ def get_img_info(path):
 
 if __name__ == '__main__':
     # generate_captcha('/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/test_set/', 1000)
-    get_img_info('/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/test_set/0.png')
+    get_img_info('/{pre_fix}/captcha_ocr/lstm_ctc/test_set/0.png')
     # gen1(49727)
     # import os
     # import re
