@@ -11,8 +11,8 @@
 # Alphabet: the character in labels. Default string.digits + string.ascii_uppercase + string.ascii_lowercase
 System:
   GpuMemoryFraction: 0.7
-  TrainSetPath: '/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/train_set'
-  TestSetPath: '/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/test_set'
+  TrainSetPath: '{path}/captcha_ocr/lstm_ctc/train_set'
+  TestSetPath: '{path}/captcha_ocr/lstm_ctc/test_set'
   LabelRegex: '([a-z0-9]{5}).png'
   MaxTextLenth: 6
   IMG_W: 200
