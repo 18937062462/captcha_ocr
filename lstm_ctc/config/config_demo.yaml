@@ -11,10 +11,10 @@
 # Alphabet: the character in labels. Default string.digits + string.ascii_uppercase + string.ascii_lowercase
 System:
   GpuMemoryFraction: 0.7
-  TrainSetPath: '{path}/captcha_ocr/lstm_ctc/train_set'
-  TestSetPath: '{path}/captcha_ocr/lstm_ctc/test_set'
+  TrainSetPath: './train_set'
+  TestSetPath: './test_set'
   LabelRegex: '([a-z0-9]{5}).png'
-  MaxTextLenth: 6
+  MaxTextLenth: 5
   IMG_W: 200
   IMG_H: 100
   ModelName: 'model_name.h5'
