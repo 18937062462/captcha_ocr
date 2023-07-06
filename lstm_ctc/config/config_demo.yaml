@@ -13,13 +13,12 @@ System:
   GpuMemoryFraction: 0.7
   TrainSetPath: '/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/train_set'
   TestSetPath: '/Users/tianqisen/PycharmProjects/captcha_ocr/lstm_ctc/test_set'
-  LabelRegex: '([A-Za-z0-9]{5}).png'
+  LabelRegex: '([a-z0-9]{5}).png'
   MaxTextLenth: 6
   IMG_W: 200
   IMG_H: 100
   ModelName: 'model_name.h5'
-#  Alphabet: '0123456789abcdefghijklmnopqrstuvwxyz'
-  Alphabet: '0123456789'
+  Alphabet: '0123456789abcdefghijklmnopqrstuvwxyz'
 
 # RNNSize:
 # - The recommended configuration is 64
